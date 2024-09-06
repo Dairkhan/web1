@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки с фотографиями</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-content h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card-content p {
+            color: #666;
+            font-size: 14px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Мои увлечения</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="R.jpeg" alt="Фотография 1">
+        <div class="card-content">
+            <h3>Boxing</h3>
+            <p1>love boxing</p1>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="read.jpg" alt="Фотография 2">
+        <div class="card-content">
+            <h3>Reading</h3>
+            <p>love book</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="b.jpeg" alt="Фотография 3">
+        <div class="card-content">
+            <h3>Basketball</h3>
+            <p>love basketball</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="cook.jpeg" alt="Фотография 4">
+        <div class="card-content">
+            <h3>Cooking</h3>
+            <p>love cooking</p>
+        </div>
+    </div>
+</div>
+<nav>
+        <button onclick="location.href='home.html'">Home</button>
+    </nav>
+</body>
+</html>

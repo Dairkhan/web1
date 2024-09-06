@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 16px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        nav button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<div class="container">
+    <div class="contact-info">
+        <h2>Мои контакты</h2>
+        <p><strong>Имя:</strong> Dairkhan M</p>
+        <p><strong>Email:</strong> dkhan@mail.com</p>
+        <p><strong>Телефон:</strong> +7 771 771 7771</p>
+        <p><strong>Социальная сеть:</strong> <a href="https://instagram.com/d" target="_blank">instagram</a></p>
+    </div>
+
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+        <input type="submit" value="Отправить сообщение">
+    </form>
+</div>
+<nav>
+        <button onclick="location.href='home.html'">Home</button>
+    </nav>
+</body>
+</html>
